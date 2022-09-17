@@ -162,6 +162,9 @@ header.sticky ul li a {
   .logo {
     display: none;
   }
+  .logo img {
+    display: none;
+  }
 
   /*------------head------------*/
   header.sticky {
@@ -287,5 +290,83 @@ header.sticky ul li a {
     font-size: 25px;
   }
   button span{
-    margin-top: 5px;
+    margin-top: 5;
   }
+
+
+  /* ---------home------ */
+  /* ----------about----- */
+.top {
+  margin-top:40px;
+}
+.mtop {
+    margin-top: 40px;
+}
+.heading {
+    text-align: center;
+}
+.heading h5 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color:#CC8C18;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.heading h2{
+    color:#24416b;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+    margin:10px 0 20px 0;
+}
+.left, .right {
+    width:50%;
+}
+
+h3 {
+    font-size: 35px;
+    font-family: serif;
+    color:#24416b;
+    margin-bottom: 20px;
+}
+.about .left {
+    padding:20px
+}
+p {
+    line-height: 30px;
+    color: #a4a4a4;
+    margin: bottom 20px;
+    font: size 15px;
+}
+.about {
+    position:relative;
+    padding-bottom: 70px;
+}
+.about .right {
+    position: relative;
+}
+.about .right::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    background:#CC8C18;
+    width:92%;
+    height:61vh;
+    z-index: -1;
+    margin:50px;
+}
+.about::after{
+    content:'';
+    position:absolute;
+    top:-5%;
+    left:0;
+    background-image:url("/Images/line1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50px;
+    width:100%;
+    z-index: -1;
+    margin:50px;
+}
+  /* ----------about-------- */
