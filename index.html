@@ -8,10 +8,13 @@
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 </head>
 <body>
- <section class="head" >
+ <section class="head">
     <div class="container flex1">
         <div class="social">
             <i class="fab fa-facebook-f"></i>
@@ -26,8 +29,57 @@
             <i class="fas fa-map-marker-alt"></i>
             <span>Yoshlik 32,Navoiy shahar,Uzbekistan</span>
         </div>
+        </section>
 
- </section>
+    <header class="header">
+     <div class="container">
+       <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+        <img src="logo.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+            <li> <a href="#home">Home</a> </li>
+            <li> <a href="#about">about</a> </li>
+            <li> <a href="#room">room</a> </li>
+            <li> <a href="#service">service</a> </li>
+            <li> <a href="#shop">shop</a> </li>
+            <li> <a href="#testimonials">testimonials</a> </li>
+            <li> <a href="#gallary">gallary</a> </li>
+            <li> <a href="#blog">blog</a> </li>
+            <li> <a href="#contact">contact</a> </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="head_contact">
+                <i class="fas fa-phone-volume">  </i>
+
+            </div>
+        </nav> 
+     </div>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector.(".hamburger")
+    const navMenu = document.querySelector.(".nav-menu");
+  
+  hamburger.addEventListener("click",mobilemenu)
+
+  function mobilemenu() {
+    hamburger.classList.toggle("avtive");
+    navMenu.classList.toggle("avtive");
+}
+
+
+window.addEventListener("scroll" , function(){
+    var header = document.querySelector(header);
+    header.classList.toggle("sticky" , window.scrollY > 0);
+})
+  </script>
     
 
 </body>
