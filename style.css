@@ -238,7 +238,7 @@ header.sticky ul li a {
     grid-gap: 30px;   
 }
 .home {
-    background-image: url("/Users/asadov/Desktop/real projects/Uzbekistan-hotel/Images/home.png");
+    background-image: url("/Images/home.png");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -361,12 +361,22 @@ p {
     position:absolute;
     top:-5%;
     left:0;
-    background-image:url("/Images/line1.png");
+    background-image:url("/Users/asadov/Desktop/real projects/Uzbekistan-hotel/Images/line1.png");
     background-size: cover;
     background-repeat: no-repeat;
     height:50px;
     width:100%;
-    z-index: -1;
-    margin:50px;
+}
+
+.about::before{
+  content:'';
+  position:absolute;
+  bottom:-5%;
+  left:0;
+  background-image:url("/Users/asadov/Desktop/real projects/Uzbekistan-hotel/Images/line2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:50px;
+  width:100%;
 }
   /* ----------about-------- */
